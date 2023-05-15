@@ -1,28 +1,26 @@
 import React from 'react';
 import './App.css';
 import Home from './components/Home/Home';
-// import {
-//   BrowserRouter as Router,
-//   Route,
-// } from "react-router-dom";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import Detail from './components/Detail/Detail';
 
 function App() {
   return (
     <div className="">
-      <BrowserRouter>
-      <Home></Home>
-      <Detail/>
-      <Routes>
-          <Route path="/">
-            
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
           </Route>
           <Route path="/detail/:id">
-            
+            <Detail/>
           </Route>
-          </Routes>
-      </BrowserRouter>
+        </Switch>
+      </Router>
     </div>
   );
 }

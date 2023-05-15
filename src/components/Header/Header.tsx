@@ -42,7 +42,7 @@ const Header = () => {
     return (
         <div>
         <nav>
-            <Link className="nav-title" to="/"><h3>WOOKIES <br /> MOVIES </h3></Link>
+            <Link className="nav-title" to="/"><h3>RELAXING<br /> MOVIES </h3></Link>
             <div className="search-option">
                 <div className="search-button"><FaSearch className="search-icon" /></div>
                 <input type="text" name="" id="" placeholder="Search..."
